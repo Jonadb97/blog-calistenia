@@ -22,8 +22,8 @@ title: Calistenia Balanced
 email: calisteniabalanced@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Un blog y glosario de Calistenia.
-baseurl: "/blog-calistenia-public" # the subpath of your site, e.g. /blog
-url: "https://jonadb97.github.io/blog-calistenia-public/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/blog-calistenia" # the subpath of your site, e.g. /blog
+url: "https://jonadb97.github.io/blog-calistenia/" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: ""
 github_username:  jonadb97
 instagram_username: calistenia.bb
