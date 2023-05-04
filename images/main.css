@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Staatliches&family=Ubuntu&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 @import url(../dist/spectre.min.css);
 @import url(../dist/spectre-icons.min.css);
 @import url(../dist/spectre-exp.min.css);
@@ -1485,5 +1486,45 @@ a.text-error:visited { color: #ff6003; }
 .text-clip { overflow: hidden; text-overflow: clip; white-space: nowrap; }
 
 .text-break { hyphens: auto; word-break: break-word; word-wrap: break-word; }
+
+#logo-img-header { transition: ease-in-out; transition-duration: 0.2s; }
+
+#logo-img-header:hover { transform: scale(1.2); }
+
+#title-on-header { transition: ease-in-out; transition-duration: 0.2s; }
+
+#title-on-header:hover { transform: scale(1.2); }
+
+.wrapper > a { color: white; text-decoration: none; }
+
+.wrapper > a:hover { color: white; text-decoration: none; }
+
+.page-link { color: white; text-decoration: none; transition: ease-in-out; transition-duration: 0.1s; }
+
+.page-link:hover { font-weight: bold; color: white; text-decoration: none; transform: scale(1.2); }
+
+ul > li > h3 > a { transition: ease-in-out; transition-duration: 0.1s; }
+
+ul > li > h3 > a:hover { transition: ease-in-out; font-size: 0.9em; text-decoration: none; filter: brightness(0.5); }
+
+ul > li > h3 > a:visited { font-size: 1em; text-decoration: none; filter: brightness(1); }
+
+#acerca-de-container { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin-left: auto; }
+
+.page-content { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+
+.page-content > .wrapper { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 1.5em; text-justify: left; }
+
+.post-content > .container { text-justify: left; padding: 1em; margin: 0.1em 1em 0.1em 1em; }
+
+#acerca-de-container > div { text-justify: left; padding: 1em; margin: 0.1em 1em 0.1em 1em; }
+
+.carousel-item { padding: 2em; }
+
+button { transition: ease-in-out; animation-duration: 1s; }
+
+button:hover { transform: scale(1.1); }
+
+.video-responsive { width: 50vw; transform: translateX(-9vw); }
 
 /*# sourceMappingURL=main.css.map */
