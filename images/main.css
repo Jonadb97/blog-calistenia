@@ -5,9 +5,9 @@
 @import url(../dist/spectre-exp.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Staatliches&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Staatliches&family=Ubuntu&display=swap");
-@media (max-width: 600px) { #carouselswipe { width: 150%; } }
+@media (max-width: 1360px) { .carousel { transform: translateX(-0.8em); width: 15em; margin: auto; overflow: hidden; } #carouselswipe { width: 15em; } }
 
-@media (max-width: 2048px) { #carouselswipe { width: 70%; } }
+@media (min-width: 1360px) { .carousel { transform: translateX(-14em); width: 42em; margin: auto; overflow: hidden; } #carouselswipe { width: 15em; } }
 
 #extitle { font-weight: 600; }
 
@@ -37,23 +37,27 @@ ul > li > h3 > a:hover { transition: ease-in-out; font-size: 0.9em; text-decorat
 
 ul > li > h3 > a:visited { font-size: 1em; text-decoration: none; filter: brightness(1); }
 
-#acerca-de-container { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin-left: auto; }
+#acerca-de-container { width: 100vw; }
 
-.page-content { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+.page-content { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 0; overflow: hidden; padding: 0; }
 
-.page-content > .wrapper { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 1.5em; text-justify: left; }
+#page-content { margin: 0; padding: 0; width: 100vw; overflow: hidden; }
 
-.post-content > .container { text-justify: left; padding: 1em; margin: 0.1em 1em 0.1em 1em; }
+.page-content > .wrapper { overflow: hidden; display: flex; width: 100vw; padding: 0; margin: 0; flex-direction: column; justify-content: center; align-items: center; text-align: center; text-justify: left; }
 
-#acerca-de-container > div { text-justify: left; padding: 1em; margin: 0.1em 1em 0.1em 1em; }
+.post-content > .container { display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
-.carousel-item { padding: 2em; }
+#acerca-de-container > div { text-justify: left; padding: 1em; margin: 0.1em 1em 0.1em 0em; }
+
+.carousel-item > img { width: 100%; }
 
 button { transition: ease-in-out; animation-duration: 1s; }
 
 button:hover { transform: scale(1.1); }
 
 .video-responsive { width: 50vw; transform: translateX(-9vw); }
+
+.post { font-size: 1.5em; }
 
 /** Reset some basic elements */
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
