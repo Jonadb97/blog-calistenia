@@ -55,8 +55,6 @@ button { transition: ease-in-out; animation-duration: 1s; }
 
 button:hover { transform: scale(1.1); }
 
-.video-responsive { width: 50vw; transform: translateX(-9vw); }
-
 .post { font-size: 1.5em; }
 
 /** Reset some basic elements */
@@ -841,7 +839,7 @@ code { border-radius: 0.1rem; line-height: 1.25; padding: .1rem .2rem; backgroun
 
 .img-fit-contain { object-fit: contain; }
 
-.video-responsive { display: block; overflow: hidden; padding: 0; position: relative; width: 100%; }
+.video-responsive { display: flex; margin: auto; overflow: hidden; padding: 0; position: relative; width: 90vw; }
 
 .video-responsive::before { content: ""; display: block; padding-bottom: 56.25%; }
 

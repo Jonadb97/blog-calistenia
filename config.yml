@@ -57,6 +57,15 @@ spectre:
   - scope:
     path: "/dist/"
 
+jekyll_admin:
+  hidden_links:
+  homepage: "pages"
+  collections:
+  posts:
+    output: true
+    sidebar_label: ejercicios
+    sidebar_label: posts
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
