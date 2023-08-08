@@ -17,7 +17,7 @@
 
 #logo-img-header { height: 2em; transition: ease-in-out; transition-duration: 0.2s; }
 
-#title-on-header { transition: ease-in-out; margin: 0 !important; transition-duration: 0.2s; }
+#title-on-header { transition: ease-in-out; transition-duration: 0.2s; }
 
 #title-on-header:hover { transform: scale(1.1); }
 
@@ -144,23 +144,23 @@ ul { list-style-type: none; }
 li { list-style: none; }
 
 /** Site header */
-.logoontitle { height: 6rem; margin: 0 1rem 0 0; }
+.logoontitle { height: 6rem; margin: 0 1rem 0 0 !important; }
 
 .logoontitle:hover { transform: scale(1.2); }
 
 header { height: 6rem !important; transition: 0.3s; }
 
-.site-header { height: 6rem !important; padding: 0 !important; display: inline-flex; position: fixed; width: 100vw; align-items: flex-start; z-index: 100; border: none; }
+.site-header { height: 6rem !important; padding: 0 !important; display: inline-flex; position: fixed; width: 100vw; align-items: flex-start !important; z-index: 100; border: none; }
 
 main { margin-top: 6rem !important; }
 
 #headerbackground { z-index: 100; background-color: rgba(0, 0, 0, 0.87); backdrop-filter: blur(5px); color: white; border: none; height: 6rem; display: inline-flex !important; width: 100%; }
 
-.site-title { font-size: 26px; font-weight: 300; letter-spacing: -1px; margin: auto 0 auto 0; font-family: "Staatliches"; color: white; text-align: left; }
+.site-title { font-size: 26px; font-weight: 300; letter-spacing: -1px; margin: auto 0 auto 0 !important; font-family: "Staatliches"; color: white; text-align: left; }
 
 .site-title, .site-title:visited { color: white; }
 
-.site-nav { margin: auto 0 auto auto; padding-bottom: 0.5rem; }
+.site-nav { margin: auto 0 auto auto !important; padding-bottom: 0.5rem; }
 
 .site-nav .nav-trigger { display: none; }
 
