@@ -15,7 +15,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Glosario de ejercicios" />
 <script type="application/ld+json">
-{"url":"https://jonadb97.github.io/blog-calistenia/blog-calistenia/glosario.html","headline":"Glosario de ejercicios","description":"Un blog y glosario de Calistenia.","@type":"WebPage","@context":"https://schema.org"}</script>
+{"url":"https://jonadb97.github.io/blog-calistenia/blog-calistenia/glosario.html","description":"Un blog y glosario de Calistenia.","@type":"WebPage","headline":"Glosario de ejercicios","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- ¡This is very important! Down here's the way to append the site base url so it comes back to it! I could've used it with Spectre.css aswell for example, now it's local and modified -->
   <link rel="stylesheet" href="/blog-calistenia/dist/spectre.min.css" >
@@ -35,10 +35,10 @@
   />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9746327888231743"
      crossorigin="anonymous"></script><link type="application/atom+xml" rel="alternate" href="https://jonadb97.github.io/blog-calistenia/blog-calistenia/feed.xml" title="Calistenia Balanced" /></head>
-<body><header class="site-header" role="banner">
+<body><header id="navbar" class="site-header" role="banner">
 
   <div class="wrapper" id="headerbackground">
-    <a id="logo-on-header" class="site-title p-centered animate__animated  animate__bounceInDown" rel="author" href="/blog-calistenia/"><img id="logo-img-header" src="/blog-calistenia/assets/LogoBlanco.svg" class="logoontitle p-centered animate__animated animate__flip animate__infinite animate__slower"></a><a  class="site-title p-centered animate__animated  animate__bounceInDown animate__delay-1s" rel="author" href="/blog-calistenia/"><p id="title-on-header">Calistenia Balanced</p></a><nav class="site-nav">
+    <a id="logo-on-header" class="site-title animate__animated  animate__bounceInDown" rel="author" href="/blog-calistenia/"><img id="logo-img-header" src="/blog-calistenia/assets/LogoBlanco.svg" class="logoontitle"></a><a  class="site-title animate__animated  animate__bounceInDown animate__delay-1s" rel="author" href="/blog-calistenia/"><p id="title-on-header">Calistenia Balanced</p></a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -55,8 +55,8 @@
       <div class="wrapper">
         <div class=" col-mx-auto">
 <h1>Glosario de ejercicios</h1>
-<div class="flexrow">
-<div class="flexcolumn">
+<div class="flexrow" style="width: 90vw">
+<div class="flexcolumn" style="flex-wrap: wrap;">
 <h2>Por tipo de ejercicio:</h2>
 <div class="card-body" id="cuerpoEjercicios">
 
@@ -2033,5 +2033,17 @@
   </div>
 
 </footer>
-</body>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-12rem";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script></body>
 </html>

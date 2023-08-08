@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Agarre falso" />
 <script type="application/ld+json">
-{"url":"https://jonadb97.github.io/blog-calistenia/blog-calistenia/post,/info/2022/02/18/agarre-falso.html","headline":"Agarre falso","dateModified":"2022-02-18T00:00:00-03:00","description":"¿Para qué usamos el agarre falso en Calistenia? El agarre falso permite transicionar del cuelgue a estabilizar arriba de las anillas, habilitando movimientos como el muscle-up. Beneficios agregados serían el desarrollo de fuerza de agarre y tonificación de antebrazos.","datePublished":"2022-02-18T00:00:00-03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://jonadb97.github.io/blog-calistenia/blog-calistenia/post,/info/2022/02/18/agarre-falso.html"},"@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://jonadb97.github.io/blog-calistenia/blog-calistenia/post,/info/2022/02/18/agarre-falso.html"},"url":"https://jonadb97.github.io/blog-calistenia/blog-calistenia/post,/info/2022/02/18/agarre-falso.html","description":"¿Para qué usamos el agarre falso en Calistenia? El agarre falso permite transicionar del cuelgue a estabilizar arriba de las anillas, habilitando movimientos como el muscle-up. Beneficios agregados serían el desarrollo de fuerza de agarre y tonificación de antebrazos.","@type":"BlogPosting","headline":"Agarre falso","dateModified":"2022-02-18T00:00:00-03:00","datePublished":"2022-02-18T00:00:00-03:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- ¡This is very important! Down here's the way to append the site base url so it comes back to it! I could've used it with Spectre.css aswell for example, now it's local and modified -->
   <link rel="stylesheet" href="/blog-calistenia/dist/spectre.min.css" >
@@ -37,10 +37,10 @@
   />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9746327888231743"
      crossorigin="anonymous"></script><link type="application/atom+xml" rel="alternate" href="https://jonadb97.github.io/blog-calistenia/blog-calistenia/feed.xml" title="Calistenia Balanced" /></head>
-<body><header class="site-header" role="banner">
+<body><header id="navbar" class="site-header" role="banner">
 
   <div class="wrapper" id="headerbackground">
-    <a id="logo-on-header" class="site-title p-centered animate__animated  animate__bounceInDown" rel="author" href="/blog-calistenia/"><img id="logo-img-header" src="/blog-calistenia/assets/LogoBlanco.svg" class="logoontitle p-centered animate__animated animate__flip animate__infinite animate__slower"></a><a  class="site-title p-centered animate__animated  animate__bounceInDown animate__delay-1s" rel="author" href="/blog-calistenia/"><p id="title-on-header">Calistenia Balanced</p></a><nav class="site-nav">
+    <a id="logo-on-header" class="site-title animate__animated  animate__bounceInDown" rel="author" href="/blog-calistenia/"><img id="logo-img-header" src="/blog-calistenia/assets/LogoBlanco.svg" class="logoontitle"></a><a  class="site-title animate__animated  animate__bounceInDown animate__delay-1s" rel="author" href="/blog-calistenia/"><p id="title-on-header">Calistenia Balanced</p></a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -149,5 +149,17 @@ Para ayudar a mantener el agarre falso recomiendo supinar constantemente y presi
   </div>
 
 </footer>
-</body>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-12rem";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script></body>
 </html>

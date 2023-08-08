@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Movimientos escapulares" />
 <script type="application/ld+json">
-{"url":"https://jonadb97.github.io/blog-calistenia/blog-calistenia/post/2021/08/12/movimientos-escapulares.html","headline":"Movimientos escapulares","dateModified":"2021-08-12T18:14:10-03:00","description":"¿Qué es la escápula y qué músculos la involucran?","datePublished":"2021-08-12T18:14:10-03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://jonadb97.github.io/blog-calistenia/blog-calistenia/post/2021/08/12/movimientos-escapulares.html"},"@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://jonadb97.github.io/blog-calistenia/blog-calistenia/post/2021/08/12/movimientos-escapulares.html"},"url":"https://jonadb97.github.io/blog-calistenia/blog-calistenia/post/2021/08/12/movimientos-escapulares.html","description":"¿Qué es la escápula y qué músculos la involucran?","@type":"BlogPosting","headline":"Movimientos escapulares","dateModified":"2021-08-12T18:14:10-03:00","datePublished":"2021-08-12T18:14:10-03:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- ¡This is very important! Down here's the way to append the site base url so it comes back to it! I could've used it with Spectre.css aswell for example, now it's local and modified -->
   <link rel="stylesheet" href="/blog-calistenia/dist/spectre.min.css" >
@@ -37,10 +37,10 @@
   />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9746327888231743"
      crossorigin="anonymous"></script><link type="application/atom+xml" rel="alternate" href="https://jonadb97.github.io/blog-calistenia/blog-calistenia/feed.xml" title="Calistenia Balanced" /></head>
-<body><header class="site-header" role="banner">
+<body><header id="navbar" class="site-header" role="banner">
 
   <div class="wrapper" id="headerbackground">
-    <a id="logo-on-header" class="site-title p-centered animate__animated  animate__bounceInDown" rel="author" href="/blog-calistenia/"><img id="logo-img-header" src="/blog-calistenia/assets/LogoBlanco.svg" class="logoontitle p-centered animate__animated animate__flip animate__infinite animate__slower"></a><a  class="site-title p-centered animate__animated  animate__bounceInDown animate__delay-1s" rel="author" href="/blog-calistenia/"><p id="title-on-header">Calistenia Balanced</p></a><nav class="site-nav">
+    <a id="logo-on-header" class="site-title animate__animated  animate__bounceInDown" rel="author" href="/blog-calistenia/"><img id="logo-img-header" src="/blog-calistenia/assets/LogoBlanco.svg" class="logoontitle"></a><a  class="site-title animate__animated  animate__bounceInDown animate__delay-1s" rel="author" href="/blog-calistenia/"><p id="title-on-header">Calistenia Balanced</p></a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -169,5 +169,17 @@ Por ejemplo: En una dominada que es un movimiento de tracción vertical la activ
   </div>
 
 </footer>
-</body>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-12rem";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script></body>
 </html>
